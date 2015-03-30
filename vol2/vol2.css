@@ -1,0 +1,60 @@
+
+scriptloader {
+  display: none;
+}
+
+/* Global */
+.erased {
+  text-decoration: line-through;
+}
+
+/* Museum */
+.museum {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Hall */
+.hall {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.hall {
+  display: none;
+}
+.hall.stop {
+  display: block;
+}
+
+/* Loader */
+body.ready>.loader {
+  display: none;
+}
+body.loading>.museum {
+  display: none;
+}
+body>.loader {
+  display: block;
+  height: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px 0;
+}
+
+/* For old browsers */
+body.old-browser>.loader,
+body.old-browser>.museum {
+  display: none;
+}
+body.old-browser>.browser-warn {
+  display: block;
+}
+.browser-warn {
+  display: none;
+  color: #777;
+  font-size: 14px;
+}
