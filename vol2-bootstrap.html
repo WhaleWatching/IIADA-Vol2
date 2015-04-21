@@ -9,53 +9,72 @@
 </head>
 <body class="loading">
 <article class="museum">
-  <section class="hall stop" theme="cover">
+  <section class="hall camera-on" data-scene="cover">
     <div class="container">
-      <div class="page-header">
-        <h2>互联网基础架构与深海人类学 <small>Vol.2</small></h2>
-        <h3>馆藏主题 <span class="label label-primary">Bootstrap <span class="erased">用例</span></span></h3>
-        <h4 class="erased">虚拟网络艺术展和博物馆</h4>
+      <div class="content">
+        <div class="page-header">
+          <h2>互联网基础架构与深海人类学 <small>Vol.2</small></h2>
+          <h3>馆藏主题 <span class="label label-primary">Bootstrap <span class="erased">用例</span></span></h3>
+          <h4 class="erased">虚拟网络艺术展和博物馆</h4>
+        </div>
+        <ol class="breadcrumb">
+          <li><a href="/">IIADA</a></li>
+          <li><a href="/vol2-bootstrap.html">Vol.2 Bootstrap</a></li>
+        </ol>
+        <div class="list-group">
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">策展人</h4>
+            <p class="list-group-item-text">Adwards</p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">开馆日</h4>
+            <p class="list-group-item-text">4 月 1 日，2015 年</p>
+          </a>
+        </div>
+        <p>
+          <a class="btn btn-primary btn-lg enter" href="#scene/intro">
+            入口
+          </a>
+        </p>
       </div>
-      <ol class="breadcrumb">
-        <li><a href="/">IIADA</a></li>
-        <li><a href="/vol2-bootstrap.html">Vol.2 Bootstrap</a></li>
-      </ol>
     </div>
   </section>
-  <section class="hall" theme="navbar">
-    <div role="document">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Standard Bootstarp navbar</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
+  <section class="hall" data-scene="intro">
+    <div class="container with-space">
+      <div class="jumbotron">
+        <h1>Hello, Bootstrap!</h1>
+        <p>
+          我们都对 Bootstrap 有着别样的情感。
+        </p>
+        <p>
+          Bootstrap 是敏捷开发、用户体验、HTML 5、Web 2.0和大数据和时代的产物。
+        </p>
+        <p>
+          在当时，「前端」已经蜕去「做美工和网页的」印象，甚至这个崭新的概念可以和高居学术层面的「后端」分庭抗礼，「前端开发规范」被人们摆上台面，就像终于能照着词本唱戏而免去吐露粗俗的市侩之词。那是个极度推崇「体验」的时代，是历史的必然，就像人们在后工业时代不再喜欢看到暴露铆钉的机器。
+        </p>
+        <p>
+          宏观上看，是设计在新载体上的爆发，开发者和决策层都在谈论着「拟物风格」、「扁平化」，浪潮尖端的「苹果公司」，有一定体系的「Google」，以及浪潮另一端的「微软」。尚未写入「历史」的设计进程，正在由不同程度的「开发者」和「设计师」推动，人群中的大多数都在迷惘：在「创业」的时代中，应该涌向何方。设计上的「敏捷开发框架」来了。
+        </p>
+        <p>
+          我们说某个框架可以敏捷开发，大多指这个框架的易用、通用和有一定高度的约定。这三个属性决定了一款框架的性质－－结论在「人机交互界面」层面上尤为有效。易用性和通用性决定了一个框架的热度
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="hall" data-scene="wells">
+    <div class="container">
+      <div class="well">I'm a well.</div>
+      <div class="well">I'm a well, too.</div>
+      <div class="well">
+        Well
+        <div class="well">
+          Well
+          <div class="well">
+            Well
           </div>
         </div>
-      </nav>
+      </div>
     </div>
   </section>
 </article>
@@ -305,6 +324,7 @@
 </div>
 <scriptloader>
   <script type="text/javascript" src="common/jquery.min.js"></script>
+  <script type="text/javascript" src="common/routie.js"></script>
   <script type="text/javascript" src="vol2/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="vol2/vol2.js"></script>
 </scriptloader>

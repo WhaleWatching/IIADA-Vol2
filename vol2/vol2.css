@@ -14,6 +14,17 @@ scriptloader {
   width: 100vw;
   overflow: hidden;
 }
+.navbar.exhibit .navbar-nav .open .dropdown-menu > .active > a,
+.navbar.exhibit .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar.exhibit .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff;
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
+  background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
+  background-image:         linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+  background-repeat: repeat-x;
+}
 
 /* Hall */
 .hall {
@@ -26,8 +37,32 @@ scriptloader {
 .hall {
   display: none;
 }
-.hall.stop {
+.hall.camera-on {
   display: block;
+}
+/*.hall .container {
+  min-height: 100vh;
+}*/
+.hall .container.with-space {
+  margin-top: 18px;
+}
+.hall[data-scene=intro],
+.hall[data-scene=cover] {
+  background:
+    linear-gradient(27deg, #eaeaea 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #eaeaea 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #ddd 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #ddd 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #e4e4e4 10px, transparent 10px),
+    linear-gradient(#e2e2e2 25%, #e5e5e5 25%, #e5e5e5 50%, transparent 50%, transparent 75%, #dadada 75%, #dadada);
+  background-color: #e8e8e8;
+  background-size: 20px 20px;
+}
+.hall[data-scene=cover] .content {
+  max-width: 500px;
+}
+.hall[data-scene=cover] .btn.enter {
+  width: 100%;
 }
 
 /* Loader */
