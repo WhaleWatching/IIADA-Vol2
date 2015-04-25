@@ -44,22 +44,239 @@
       <div class="jumbotron">
         <h1>Hello, Bootstrap!</h1>
         <p>
-          我们都对 Bootstrap 有着别样的情感。
+          开发者都对 Bootstrap 有着别样的情感。
         </p>
         <p>
-          Bootstrap 是敏捷开发、用户体验、HTML 5、Web 2.0和大数据和时代的产物。
+          Bootstrap 是敏捷开发、用户体验、HTML 5、Web 2.0和大数据时代的产物。
         </p>
         <p>
-          在当时，「前端」已经蜕去「做美工和网页的」印象，甚至这个崭新的概念可以和高居学术层面的「后端」分庭抗礼，「前端开发规范」被人们摆上台面，就像终于能照着词本唱戏而免去吐露粗俗的市侩之词。那是个极度推崇「体验」的时代，是历史的必然，就像人们在后工业时代不再喜欢看到暴露铆钉的机器。
+          在当时，「前端」已经蜕去「做美工和网页的」印象，甚至这个崭新的概念可以和高居学术层面的「后端」分庭抗礼，「前端开发规范」被人们摆上台面，终于能照着词本唱戏而免去吐露粗俗的市侩之词。那是个极度推崇「体验」的时代，历史的必然，就像「用户」在后工业时代不再喜欢看到暴露铆钉的机器。
         </p>
         <p>
-          宏观上看，是设计在新载体上的爆发，开发者和决策层都在谈论着「拟物风格」、「扁平化」，浪潮尖端的「苹果公司」，有一定体系的「Google」，以及浪潮另一端的「微软」。尚未写入「历史」的设计进程，正在由不同程度的「开发者」和「设计师」推动，人群中的大多数都在迷惘：在「创业」的时代中，应该涌向何方。设计上的「敏捷开发框架」来了。
+          宏观上看，是设计在新载体上的爆发，开发者和决策层都在谈论着「拟物风格」、「扁平化」，浪潮尖端的「苹果」，有一定体系的「Google」，以及浪潮另一端的「微软」。尚未写入「历史」的设计进程，正在由不同程度的「开发者」和「设计师」推动，人群中的大多数都在迷惘：在强调「用户体验」的「创业」时代中，应该涌向何方？在代码层面，一套使用框架的代码质量是不容易被用户察觉的。然而，「用户体验」层面上的「敏捷开发框架」来了。
         </p>
         <p>
-          我们说某个框架可以敏捷开发，大多指这个框架的易用、通用和有一定高度的约定。这三个属性决定了一款框架的性质－－结论在「人机交互界面」层面上尤为有效。易用性和通用性决定了一个框架的热度
+          我们说某个框架可以敏捷开发，大多指这个框架的易用、通用和有一定高度的约定。这三个属性决定了一款框架的性质－－在「人机交互界面」层面上尤为有效。在这里，易用性和通用性从结论上决定了一个框架的热度，而约定往往容易被人群忽略。
         </p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        <p>
+          回到我们的主题，毫无疑问，Bootstrap（类似的框架还有 Foundation）有着极佳的易用性和通用性。它给了你类似于「拖拽美梦」（该词被用来形容仅需拖拽就可完成的技术生产工具）的体验－－无需精打细算，即可拥有「规范」的产出。在一些工程师看来，Bootstrap 就像一片「合格证」，如果「作品」由内而外洋溢着「Bootstrap 味道」，「OK，设计和交互被我们搞定了」。
+        </p>
+        <p>
+          「Bootstrap 味道」，这不是个中立词。当工程师看到精致的「Bootstrap Components Guide」，工程师希望「产出」有着一样精致的「Bootstrap 味道」。此时，再次引出我们的观点，它影响着截然不同的「Bootstrap 味道」：「约定」被人们忽略了。
+        </p>
+        <p>
+          「约定」，是一套框架必不可少的部分。「约定」囊括了使用说明，设计准则和最佳实践建议。Bootstrap 有一定程度的约定：大多是使用说明，极少的设计准则和最佳实践建议。我们并非在全面批判「Bootstrap」设计的不够好，或者专业程度不高，而是「Bootstrap 开发者」与「使用 Bootstrap 的工程师」有巨大的设计分歧，很多问题交给工程师无法「敏捷的」甚至无法「正确的」解决。约定不足所带来的问题很多。
+        </p>
+        <ul>
+          <li>文本元素不尽如意，其之一是因为 Bootstrap 基于「文档超文本」－－它使用「Normalize.css」，而工程师并非都完成了从「DIV＋CSS 设计思路」的进化－－他们习惯于使用「Reset.css」。</li>
+          <li>Bootstrap 有数目众多看似「不完整」的组件，例如该列表，Bootstrap 并没有给予「jumbotron」一份子列表样式定义集，实则缘于 Bootstrap 开发者放宽了「Custom design」的范围。</li>
+          <li>Bootstrap 组件绑定了一些粗糙的动画。这是 Bootstrap 的不足－－没有「Animation system」－－约定不周。</li>
+        </ul>
+        <p><a class="btn btn-primary btn-lg" href="#scene/navbar" role="button">Learn more</a></p>
       </div>
+    </div>
+  </section>
+  <section class="hall" data-scene="navbar">
+    <div class="container with-space">
+      <div class="exhibit">
+        <div class="frame" style="height: 258px;">
+          <div class="frame-cover"></div>
+          <nav class="navbar navbar-inverse">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="auto-toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+              </div>
+              <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+              </div><!--/.nav-collapse -->
+            </div>
+          </nav>
+        </div>
+        <div class="info">
+          <div class="title">标准的 Bootstrap Navbar</div>
+          <div class="description"></div>
+        </div>
+      </div>
+      <div class="exhibit navbar-2">
+        <div class="frame" style="height: 398px;">
+          <div class="frame-cover"></div>
+          <div class="navbar navbar-inverse ex-navbar" role="navigation">
+              <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="auto-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-menu">
+                          <span class="sr-only"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="/">酷安网</a>
+                      <a href="javascript:void(0);" class="auto-toggle-later ex-navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-form"><span class="glyphicon glyphicon-search"></span></a>
+                      <a href="/home" class="ex-navbar-toggle"><span class="glyphicon glyphicon-user"></span></a>
+                      <a href="/notification" class="ex-navbar-toggle"><span class="glyphicon glyphicon-bell"></span><span class="notification-count"></span></a>
+                  </div>
+
+                  <div class="collapse navbar-collapse navbar-left navbar-collapse-menu">
+                      <ul class="nav navbar-nav">
+                          <li><a href="/">首页</a></li>
+                          <li><a href="/apk/">应用</a></li>
+                          <li><a href="/game/">游戏</a></li>
+                          <li><a href="/faxian/">发现频道</a></li>
+                          <li><a href="/album/">应用集</a></li>
+                          <li><a href="/apk/com.coolapk.market">酷市场</a></li>
+                      </ul>
+                  </div>
+                  <div id="exNotifier" class="collapse navbar-collapse navbar-right hidden-xs" data-toggle="exNotify" data-uid="149499" data-popover="#notificationPopover" data-dock="right" data-top="40" data-margin="0">
+                      <ul class="nav navbar-nav ex-login-navbar">
+                          <li class="visible-sm"><a href="javascript:void(0);" data-toggle="collapse" data-target=".navbar-collapse-form"><span class="glyphicon glyphicon-search"></span></a></li>
+                                          <li class="dropdown">
+                              <a href="/home" class="dropdown-toggle" data-toggle="dropdown" data-hover="exDropdown">EdwardChen</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="/home">我的酷安</a></li>
+                                  <li><a href="/u/149499">我的主页</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li><a href="/settings">设置</a></li>
+                                  <li><a href="/settings/profile">个人资料</a></li>
+                                  <li><a href="/settings/avatar">我的头像</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li><a href="/account/logout">退出</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown">
+                              <a href="/notification" class="dropdown-toggle" data-toggle="dropdown" data-hover="exDropdown">消息<span class="notification-badge"></span><b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="menu-item-notification" href="/notification">通知<span class="count pull-right"></span></a></li>
+                                  <li class="divider" role="presentation"></li>
+                                  <li><a class="menu-item-atme" href="/notification/atme">@我的动态<span class="count pull-right"></span></a></li>
+                                  <li><a class="menu-item-atcommentme" href="/notification/atcommentme">@我的评论<span class="count pull-right"></span></a></li>
+                                  <li><a class="menu-item-commentme" href="/notification/commentme">回复我的评论<span class="count pull-right"></span></a></li>
+                                  <li class="divider" role="presentation"></li>
+                                  <li><a class="menu-item-message" href="/message">私信<span class="count pull-right"></span></a></li>
+                              </ul>
+                          </li>
+                                      </ul>
+                  </div>
+                  <div class="collapse navbar-collapse navbar-right navbar-collapse-form">
+                      <form class="navbar-form ex-navbar-form" role="search" action="/search" method="get">
+                          <div class="input-group">
+                              <input type="text" name="q" class="form-control input-sm" placeholder="刀塔传奇" value="">
+                              <span class="input-group-btn">
+                                  <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                              </span>
+                          </div>
+                      </form>
+                  </div><!-- /.navbar-collapse -->
+              </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="title">轻度自定义的 Bootstrap Navbar</div>
+          <div class="description">From <a target="_blank" href="http://coolapk.com">Coolapk</a></div>
+        </div>
+      </div>
+      <div class="exhibit navbar-3">
+        <div class="frame" style="min-height: 424px;">
+          <!-- <div class="frame-cover"></div> -->
+          <header class="navbar navbar-inverse">
+            <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="right-toggle collapsed" data-toggle="collapse" data-target="#search-collapse" aria-expanded="false">
+                      <span class="sr-only">Toggle search box</span>
+                      <span class="icon-search3"></span>
+                  </button>
+                <button type="button" class="left-toggle collapsed" data-toggle="collapse" data-target="#nav-3" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-menu9"></span>
+                </button>
+                <a class="navbar-brand right-click-redirect" hrefUnused="http://www.geekwire.com/"></a>
+              </div>
+
+              <nav id="nav-3" class="navbar-collapse navbar-left collapse" role="navigation" aria-expanded="false" style="height: 0px;">
+                <ul id="menu-primary-menu" class="nav navbar-nav"><li class="visible-xs-block menu-home"><a hrefUnused="https://www.geekwire.com/">Home</a></li>
+          <li class="dropdown menu-news"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#" aria-expanded="false">News <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="menu-microsoft"><a hrefUnused="http://www.geekwire.com/microsoft/">Microsoft</a></li>
+            <li class="menu-amazon"><a hrefUnused="http://www.geekwire.com/amazon/">Amazon</a></li>
+            <li class="menu-apple"><a hrefUnused="http://www.geekwire.com/apple/">Apple</a></li>
+            <li class="menu-google"><a hrefUnused="http://www.geekwire.com/google/">Google</a></li>
+            <li class="menu-app-of-the-week"><a hrefUnused="http://www.geekwire.com/app-of-the-week/">App of the Week</a></li>
+            <li class="menu-geek-of-the-week"><a hrefUnused="http://www.geekwire.com/geek-of-the-week/">Geek of the Week</a></li>
+            <li class="menu-startups"><a hrefUnused="http://www.geekwire.com/startups/">Startups</a></li>
+            <li class="menu-startup-spotlight"><a hrefUnused="http://www.geekwire.com/startup-spotlight/">Startup Spotlight</a></li>
+            <li class="menu-tech-moves"><a hrefUnused="http://www.geekwire.com/tech-moves/">Tech Moves</a></li>
+            <li class="menu-launch-pads"><a hrefUnused="http://www.geekwire.com/launchpads/">Launch Pads</a></li>
+            <li class="menu-geek-life"><a hrefUnused="http://www.geekwire.com/geeklife/">Geek Life</a></li>
+            <li class="menu-columnists"><a hrefUnused="http://www.geekwire.com/columnists/">Columnists</a></li>
+            <li class="menu-podcast"><a hrefUnused="http://www.geekwire.com/podcast/">Podcast</a></li>
+          </ul>
+          </li>
+          <li class="menu-jobs"><a hrefUnused="http://www.geekwork.com/jobs/">Jobs</a></li>
+          <li class="dropdown menu-events"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">Events <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="menu-geekwire-events"><a hrefUnused="http://www.geekwire.com/events/">GeekWire Events</a></li>
+            <li class="menu-community-calendar"><a hrefUnused="/calendar/">Community Calendar</a></li>
+          </ul>
+          </li>
+          <li class="dropdown menu-resources"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#" aria-expanded="false">Resources <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="menu-memberships"><a hrefUnused="http://www.geekwire.com/memberships/">Memberships</a></li>
+            <li class="menu-health-benefits"><a hrefUnused="http://www.geekwire.com/health-benefits/">Health Benefits</a></li>
+            <li class="menu-startup-resources"><a hrefUnused="http://www.geekwire.com/startup-resources/">Startup Resources</a></li>
+            <li class="menu-startup-list"><a hrefUnused="http://www.geekwire.com/startup-list/">Startup List</a></li>
+            <li class="menu-geekwire-200"><a hrefUnused="http://www.geekwire.com/geekwire-200/">GeekWire 200</a></li>
+            <li class="menu-seattle-engineering-centers"><a hrefUnused="http://www.geekwire.com/engineering-centers/">Seattle Engineering Centers</a></li>
+            <li class="menu-geekwire-store"><a hrefUnused="http://store.geekwire.com">GeekWire Store</a></li>
+            <li class="menu-community-calendar"><a hrefUnused="/calendar/">Community Calendar</a></li>
+          </ul>
+          </li>
+          <li class="menu-new-deals"><a hrefUnused="https://deals.geekwire.com/"><span class="small text-primary">New!</span> Deals</a></li>
+          <li class="dropdown menu-about"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">About <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="menu-about-geekwire"><a hrefUnused="http://www.geekwire.com/about-geekwire/">About GeekWire</a></li>
+            <li class="menu-contact-us"><a hrefUnused="http://www.geekwire.com/contact-us/">Contact Us</a></li>
+            <li class="menu-advertise"><a hrefUnused="http://www.geekwire.com/advertise/">Advertise</a></li>
+            <li class="menu-sponsors"><a hrefUnused="http://www.geekwire.com/sponsors/">Sponsors</a></li>
+          </ul>
+          </li>
+          </ul>       <ul class="nav navbar-nav nav-social">
+                     <li><a hrefUnused="https://www.facebook.com/geekwire"><span class="icon-facebook"></span></a></li>
+                     <li><a hrefUnused="https://twitter.com/intent/user?screen_name=GeekWire"><span class="icon-twitter"></span></a></li>
+                     <li><a hrefUnused="/podcast/"><span class="icon-mic"></span></a></li>
+                 </ul>
+              </nav>
+                <div id="search-collapse" class="navbar-collapse navbar-right collapse" aria-expanded="false" style="height: 0px;">
+                  <form class="navbar-form" role="search" method="get" action="http://www.geekwire.com/">
+                      <div class="form-group has-feedback">
+                          <label for="search-box" class="sr-only">Search for:</label>
+                          <input type="search" id="search-box" value="" name="s" class="search-field form-control input-sm" placeholder="Search" required="" autocomplete="off">
+                          <span class="icon-search3 form-control-feedback"></span>
+                      </div>
+                  </form>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="info">
+          <div class="title">高度自定义的 Bootstrap Navbar</div>
+          <div class="description">From <a target="_blank" href="http://www.geekwire.com/">GeekWire</a>, serve your self please.</div>
+        </div>
+      </div>
+      <nav>
+        <ul class="pager">
+          <li><a href="#scene/intro">Previous</a></li>
+          <li><a href="#scene/wells">Next</a></li>
+        </ul>
+      </nav>
     </div>
   </section>
   <section class="hall" data-scene="wells">
@@ -75,6 +292,10 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="hall" data-scene="hidden">
+    <div class="container">
     </div>
   </section>
 </article>
