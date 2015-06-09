@@ -103,7 +103,7 @@
           setTimeout(function () {
             scene_navbar.find('.auto-toggle-later').click();
           },400);
-        }, 1000));
+        }, 3000));
       }
       if(prev_scene_name === 'navbar' && scene_navbar.data('animation_id')) {
         clearInterval(scene_navbar.data('animation_id'));
