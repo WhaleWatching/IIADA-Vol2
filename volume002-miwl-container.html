@@ -25,7 +25,7 @@
       position: relative;
       float: left;
     }
-    @media (max-height: 699px) {
+/*    @media {
       .ip6p {
         width: 320px;
         height: 650px;
@@ -41,25 +41,42 @@
         margin-left: 338px;
         margin-top: 69px;
       }
-    }
-    @media (min-height: 700px) and (max-height: 799px) {
+    }*/
+    @media (max-height: 699px)  {
       .ip6p {
-        width: 350px;
-        height: 710px;
-        background-size: 350px;
+        width: 400px;
+        height: 810px;
+        background-size: 400px;
       }
       iframe {
-        top: 76px;
-        left: 18px;
-        width: 314px;
-        height: 554px;
+        top: 86px;
+        left: 20px;
+        width: 361px;
+        height: 632px;
       }
       .well {
-        margin-left: 364px;
+        margin-left: 414px;
         margin-top: 76px;
       }
     }
-    @media (min-height: 800px) {
+    @media (min-height: 700px) and (max-height: 799px) {
+      .ip6p {
+        width: 450px;
+        height: 910px;
+        background-size: 450px;
+      }
+      iframe {
+        top: 97px;
+        left: 23px;
+        width: 405px;
+        height: 710px;
+      }
+      .well {
+        margin-left: 461px;
+        margin-top: 98px;
+      }
+    }
+    @media (min-height: 799px) {
       .ip6p {
         width: 450px;
         height: 910px;
@@ -82,6 +99,10 @@
     .full-screen {
       margin: 0 5px;
     }
+    footer {
+      color: #999;
+      margin-top: 25px;
+    }
   </style>
   <link rel="stylesheet" type="text/css" href="vol2/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="vol2/bootstrap/css/bootstrap-theme.min.css">
@@ -91,7 +112,7 @@
     <div class="thumbnail">
       <div class="caption">
         <div class="ip6p">
-          <iframe src="vol2-bootstrap.html"></iframe>
+          <iframe src="volume002-miwl.html"></iframe>
         </div>
         <div class="well">
           <div class="page-header">
@@ -101,6 +122,7 @@
             强烈建议您在手机端参观，或者<button type="button" class="btn btn-primary btn-sm full-screen">进入全屏模式</button>
           </p>
           <form>
+            <label>您可以在此配置您的浏览设备</label>
             <div class="input-group">
               <span class="input-group-addon">
                 <input name="iphone" class="switch-phone" data-image="vol2/img/black-ip6p.png" type="radio" checked>
@@ -114,6 +136,7 @@
               <input type="text" class="form-control" disabled="" value="iPhone 6+ Golden">
             </div>
           </form>
+          <footer>&copy; 2015 Adwards and IIADA Foundation</footer>
         </div>
       </div>
     </div>
