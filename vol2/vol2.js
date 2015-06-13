@@ -97,17 +97,30 @@
       if(scene_name === prev_scene_name) {
         return;
       }
-      if(scene_name === 'navbar' && !scene_navbar.data('animation_id')) {
-        scene_navbar.data('animation_id', setInterval(function () {
-          scene_navbar.find('.auto-toggle').click();
+      if(scene_name === 'navbar' && !scene_navbar.data('animation_id_0')) {
+        scene_navbar.data('animation_id_0', setInterval(function () {
+          scene_navbar.find('.auto-toggle-0').click();
+        }, 1400));
+        scene_navbar.data('animation_id_1', setInterval(function () {
+          scene_navbar.find('.auto-toggle-1').click();
           setTimeout(function () {
-            scene_navbar.find('.auto-toggle-later').click();
-          },400);
+            scene_navbar.find('.auto-toggle-1-later').click();
+          },300);
+        }, 2400));
+        scene_navbar.data('animation_id_2', setInterval(function () {
+          scene_navbar.find('.auto-toggle-2').click();
+          setTimeout(function () {
+            scene_navbar.find('.auto-toggle-2-later').click();
+          },500);
         }, 3000));
       }
-      if(prev_scene_name === 'navbar' && scene_navbar.data('animation_id')) {
-        clearInterval(scene_navbar.data('animation_id'));
-        scene_navbar.data('animation_id', false);
+      if(prev_scene_name === 'navbar' && scene_navbar.data('animation_id_0')) {
+        clearInterval(scene_navbar.data('animation_id_0'));
+        clearInterval(scene_navbar.data('animation_id_1'));
+        clearInterval(scene_navbar.data('animation_id_2'));
+        scene_navbar.data('animation_id_0', false);
+        scene_navbar.data('animation_id_1', false);
+        scene_navbar.data('animation_id_2', false);
       }
     });
 

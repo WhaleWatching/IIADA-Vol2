@@ -36,21 +36,27 @@
 (function ($, window, document) {
   var
     elem_body = $('body'),
-    elem_ip6p = $('.ip6p');
+    elem_phone = $('.phone'),
+    elem_iframe = $('iframe');
   var
     delegate = $.delegate_factory(elem_body);
   delegate('click.golden', '.switch-phone', function () {
     console.log($(this).data('image'));
-    elem_ip6p.css({backgroundImage: 'url(' + $(this).data('image') + ')'});
+    elem_phone.css({backgroundImage: 'url(' + $(this).data('image') + ')'});
   });
   delegate('click.full-screen', '.full-screen', function () {
     var html = $('html')[0];
     var requestMethod = html.requestFullScreen || html.webkitRequestFullScreen || html.mozRequestFullScreen || html.msRequestFullscreen;
     requestMethod.call(html);
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  });
+  $(window).on('resize.reload-iframe', function () {
+    elem_iframe[0].contentWindow.location.reload();
   });
   delegate('mousewheel.disable-frame', 'iframe', function (event) {
-    console.log(event);
     event.preventDefault();
     event.stopImmediatePropagation();
   })
+  $('[data-toggle=tooltip]').tooltip();
 })(jQuery, window, document);

@@ -2,147 +2,174 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Bootstrap - 互联网基础架构与深海人类学 Vol.2</title>
-  <style type="text/css">
-    article {
-/*      width: 680px;
-      margin: 0 auto;*/
-      padding: 15px 10%;
-    }
-    iframe {
-      border: none;
-      position: absolute;
-      /*display: none;*/
-    }
-    .caption:after {
-      content: " ";
-      clear: both;
-      display: table;
-    }
-    .ip6p {
-      background-image: url("vol2/img/black-ip6p.png");
-      background-repeat: no-repeat;
-      position: relative;
-      float: left;
-    }
-/*    @media {
-      .ip6p {
-        width: 320px;
-        height: 650px;
-        background-size: 320px;
-      }
-      iframe {
-        top: 69px;
-        left: 17px;
-        width: 287px;
-        height: 506px;
-      }
-      .well {
-        margin-left: 338px;
-        margin-top: 69px;
-      }
-    }*/
-    @media (max-height: 699px)  {
-      .ip6p {
-        width: 400px;
-        height: 810px;
-        background-size: 400px;
-      }
-      iframe {
-        top: 86px;
-        left: 20px;
-        width: 361px;
-        height: 632px;
-      }
-      .well {
-        margin-left: 414px;
-        margin-top: 76px;
-      }
-    }
-    @media (min-height: 700px) and (max-height: 799px) {
-      .ip6p {
-        width: 450px;
-        height: 910px;
-        background-size: 450px;
-      }
-      iframe {
-        top: 97px;
-        left: 23px;
-        width: 405px;
-        height: 710px;
-      }
-      .well {
-        margin-left: 461px;
-        margin-top: 98px;
-      }
-    }
-    @media (min-height: 799px) {
-      .ip6p {
-        width: 450px;
-        height: 910px;
-        background-size: 450px;
-      }
-      iframe {
-        top: 98px;
-        left: 23px;
-        width: 405px;
-        height: 710px;
-      }
-      .well {
-        margin-left: 461px;
-        margin-top: 98px;
-      }
-    }
-    .input-group {
-      margin-bottom: 10px;
-    }
-    .full-screen {
-      margin: 0 5px;
-    }
-    footer {
-      color: #999;
-      margin-top: 25px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IIADA Exhibition Vol.2 | serotoninphobia.info</title>
   <link rel="stylesheet" type="text/css" href="vol2/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="vol2/bootstrap/css/bootstrap-theme.min.css">
+  <style type="text/css">
+body {
+  background-image: linear-gradient(#f7f7f7, #f7f7f7);
+  background-size: 400px 400px;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+article {
+  width: 1020px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+}
+section {
+  width: 1020px;
+  height: 400px;
+  background-color: #f7f7f7;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+.phone {
+  position: relative;
+  height: 700px;
+  width: 350px;
+  background-image: url("vol2/img/black-ip6p.png");
+  background-repeat: no-repeat;
+  background-size: 340px;
+  margin-top: -150px;
+}
+.phone iframe {
+  position: absolute;
+  top: 73px;
+  left: 17px;
+  width: 307px;
+  height: 537px;
+  border: none;
+}
+.content {
+  flex: 1;
+  -webkit-flex: 1;
+  padding: 0 15px;
+}
+.choose-phone img {
+  height: 130px;
+}
+.choose-phone .btn {
+  line-height: 200px;
+  width: 200px;
+}
+form {
+  display: flex;
+  display: -webkit-flex;
+}
+.qrcode {
+  margin-left: 15px;
+}
+.qrcode:hover,
+.qrcode:active {
+  background-color: #fff;
+  box-shadow: none;
+}
+.btn.wide span {
+  vertical-align: baseline;
+}
+.btn.wide {
+  width: 400px;
+  font-size: 22px;
+  font-weight: normal;
+}
+footer {
+  color: #999;
+  margin-top: 25px;
+}
+@media (max-height: 760px) {
+  .phone {
+    display: none;
+  }
+  .choose-phone .btn-group {
+    display: none;
+  }
+}
+@media (min-height: 761px) {
+  .choose-phone .btn.wide {
+    display: none;
+  }
+}
+.screen-warning {
+  display: none;
+}
+@media (max-width: 1020px) {
+  article {
+    display: none;
+  }
+  .screen-warning {
+    display: block;
+  }
+  body {
+    background-image: none;
+  }
+}
+
+
+  </style>
 </head>
 <body>
   <article>
-    <div class="thumbnail">
-      <div class="caption">
-        <div class="ip6p">
-          <iframe src="volume002-miwl.html"></iframe>
-        </div>
-        <div class="well">
-          <div class="page-header">
-            <h1>Bootstrap - 互联网基础架构<br>与深海人类学 Vol.2</h1>
-          </div>
-          <p>
-            强烈建议您在手机端参观，或者<button type="button" class="btn btn-primary btn-sm full-screen">进入全屏模式</button>
-          </p>
-          <form>
-            <label>您可以在此配置您的浏览设备</label>
-            <div class="input-group">
-              <span class="input-group-addon">
-                <input name="iphone" class="switch-phone" data-image="vol2/img/black-ip6p.png" type="radio" checked>
-              </span>
-              <input type="text" class="form-control" disabled="" value="iPhone 6+ Black">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon">
-                <input name="iphone" class="switch-phone" data-image="vol2/img/golden-ip6p.png" type="radio">
-              </span>
-              <input type="text" class="form-control" disabled="" value="iPhone 6+ Golden">
-            </div>
-          </form>
-          <footer>&copy; 2015 Adwards and IIADA Foundation</footer>
-        </div>
+    <section>
+      <div class="phone">
+        <iframe src="volume002-miwl.html"></iframe>
       </div>
-    </div>
+      <div class="content">
+        <div class="page-header">
+          <h1>
+            äº’è”ç½‘åŸºç¡€æž¶·±æµ·äººç±»å­¦
+          </h1>
+        </div>
+        <form class=" choose-phone">
+          <div class="btn wide btn-primary full-screen">
+            <span class="glyphicon glyphicon-eye-open"></span>
+            入馆
+          </div>
+          <div class="btn-group" data-toggle="buttons">
+            <label class="switch-phone btn btn-default active" data-image="vol2/img/black-ip6p.png">
+              <input type="radio" name="options" autocomplete="off" checked>
+              <img src="vol2/img/iphone6p-gray-select-2014.png" data-toggle="tooltip" data-placement="bottom" title="iPhone 6+ Space Gray">
+            </label>
+            <label class="switch-phone btn btn-default" data-image="vol2/img/golden-ip6p.png">
+              <input type="radio" name="options" autocomplete="off">
+              <img src="vol2/img/iphone6p-gold-select-2014.png" data-toggle="tooltip" data-placement="bottom" title="iPhone 6+ Gold">
+            </label>
+          </div>
+          <div class="qrcode btn btn-default">
+            <img src="vol2/img/vol2-qrcode.png" data-toggle="tooltip" data-placement="bottom" title="扫描二维码在手机浏览">
+          </div>
+        </form>
+        <footer>&copy; 2015 Adwards and IIADA Foundation</footer>
+      </div>
+    </section>
   </article>
+  <div class="screen-warning">
+    <div class="container">
+      <div class="page-header">
+        <h3>
+          <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+          你是否想要浏览手机版？
+        </h3>
+      </div>
+      <p>
+        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+        跳转到<a href="volume002-miwl.html">手机版</a>
+      </p>
+      <p>
+        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+        如果你在桌面访问本馆，请调整浏览器窗口至最大化
+      </p>
+    </div>
+  </div>
 <scriptloader>
   <script type="text/javascript" src="common/jquery.min.js"></script>
+  <script type="text/javascript" src="vol2/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="vol2/vol2-container.js"></script>
 </scriptloader>
 </body>
