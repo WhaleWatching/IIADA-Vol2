@@ -3,25 +3,53 @@
 <!-- 该网页遵循 面向未来编程 开发理念 -->
 <head>
   <meta charset="utf-8">
-  <title>IIADA Exhibition Vol.2 | serotoninphobia.info</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="vol2/bootstrap/css/bootstrap.min.css">
+  <title>IIADA Exhibition Vol.2 | IIADA.SerotoninPhobia.info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="vol2/bootstrap/css/bootstrap-modified.min.css">
   <link rel="stylesheet" type="text/css" href="vol2/bootstrap/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="vol2/vol2.css">
 </head>
 <body class="loading">
-<article class="museum">
+<article class="museum" scene-indicator>
+  <nav class="navbar navbar-default navbar-fixed-top main-navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">IIADA Exhibition Vol.2</a>
+      </div>
+      <div id="main-navbar-collapse" class="navbar-collapse collapse main-collapse-navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 入口</a></li>
+          <li><a href="#scene/intro"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 介绍</a></li>
+          <li><a href="#scene/rules"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> 注意事项</a></li>
+          <li><a href="#scene/container"><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> 容器的使用</a></li>
+          <li><a href="#scene/smell"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> 探索设计</a></li>
+          <li><a href="#scene/navbar"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 突变设计</a></li>
+          <li><a href="#scene/redefine"><span class="glyphicon glyphicon-console" aria-hidden="true"></span> 定义设计</a></li>
+          <li><a href="#scene/productive-forces"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 抛弃设计</a></li>
+          <li><a href="#scene/exit"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> 出口</a></li>
+          
+        </ul>
+        
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
   <section class="hall camera-on" data-scene="cover">
     <div class="container">
       <div class="content">
         <div class="page-header">
-          <h2>互联网基础架构<br>与深海人类学 <small>Vol.2</small></h2>
+          <h2>互联网基础建设<br>与深海人类学 <small>Vol.2</small></h2>
           <h3>馆藏主题 <span class="label label-primary">Bootstrap</span></h3>
           <h4 class="erased">虚拟互联网艺术展兼博物馆</h4>
         </div>
         <ol class="breadcrumb">
           <li><a href="/">IIADA</a></li>
-          <li><a href="/vol2-bootstrap.html">Vol.2 Bootstrap</a></li>
+          <li><a href="/volume002-miwl.html">Vol.2 Bootstrap</a></li>
         </ol>
         <div class="list-group">
           <a class="list-group-item">
@@ -30,7 +58,7 @@
           </a>
           <a class="list-group-item">
             <h4 class="list-group-item-heading">开馆日</h4>
-            <p class="list-group-item-text">4 月 1 日，2015 年</p>
+            <p class="list-group-item-text">6 月 1 日，2015 年</p>
           </a>
         </div>
         <p>
@@ -68,7 +96,7 @@
           「Bootstrap 味道」，这不是个中立词。当工程师看到精致的「Bootstrap Components Guide」，工程师希望「产出」有着一样精致的「Bootstrap 味道」。此时，再次引出我们的观点，它影响着截然不同的「Bootstrap 味道」：「约定」被人们忽略了。
         </p>
         <p>
-          「约定」，是一套框架必不可少的部分。「约定」囊括了使用说明，设计准则和最佳实践建议。Bootstrap 有一定程度的约定：大多是使用说明，极少的设计准则和最佳实践建议。我们并非在全面批判「Bootstrap」设计的不够好，或者专业程度不高，而是「Bootstrap 开发者」与「使用 Bootstrap 的工程师」有巨大的设计分歧，很多问题交给工程师无法「敏捷的」甚至无法「正确的」解决。约定不足所带来的问题很多。
+          「约定」，是一套框架必不可少的部分。「约定」囊括了使用说明，设计准则和最佳实践建议。Bootstrap 有一定程度的约定：大多是使用说明，少量的设计准则和最佳实践建议。我们并非在全面批判「Bootstrap」设计的不够好，或者专业程度不高，而是「Bootstrap 开发者」与「使用 Bootstrap 的工程师」有巨大的设计分歧，工程师甚至没有学习 Bootstrap 提供的文档，很多问题交给工程师无法「敏捷的」甚至无法「正确的」解决。约定不足、学习不周所带来的问题很多。
         </p>
         <ul>
           <li>文本元素不尽如意，其之一是因为 Bootstrap 基于「文档超文本」－－它使用「Normalize.css」，而工程师并非都完成了从「DIV＋CSS 设计思路」的进化－－他们习惯于使用「Reset.css」。</li>
@@ -80,13 +108,32 @@
           没有足够能力参悟「Bootstrap 隐性约定」的工程师使用「Bootstrap」的事件，我们称之为「Bootstrap 失败」。所以，对相当一部分依赖 Bootstrap 的工程师来说，「Bootstrap changes nothing」。
         </p>
         <p>
+          他们偏离了设计的正途，不断下潜，最终触及深海，并和睦的生活在那里。
+        </p>
+        <p>
           我们在这里不是诉求某种感情－－譬如张贴「抵制 Bootstrap」之类带有革命意味的标语。之所以选题「Bootstrap」，缘由是这是一个「代表大多数」的例子，「Bootstrap 失败」是个广泛的现象，它存在于很多各式各样的「框架」中。展览着力于展现「Bootstrap 失败」，这种「互联网」构成中的一部分。
         </p>
         <p>
           本展尽量避免修饰或添加额外的样式规则，因此，展馆本身也是一例「Bootstrap 失败」。
         </p>
-        <p><a class="btn btn-primary btn-lg" href="#scene/container" role="button">Learn more</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#scene/rules" role="button">Learn more</a></p>
       </div>
+    </div>
+  </section>
+  <section class="hall" data-scene="rules">
+    <div class="container with-space">
+      <div class="forbidden">
+        <img src="vol2/img/forbidden.png" class="img-thumbnail">
+        <h1 class="middle">注意事项</h1>
+        <img src="vol2/img/forbidden-2.png" class="img-thumbnail">
+      </div>
+
+      <nav>
+        <ul class="pager">
+          <li><a href="#scene/intro">前一个展厅</a></li>
+          <li><a href="#scene/container">后一个展厅</a></li>
+        </ul>
+      </nav>
     </div>
   </section>
   <section class="hall" data-scene="navbar">
@@ -204,7 +251,7 @@
         </div>
         <div class="info">
           <div class="title">轻度自定义的 Bootstrap Navbar</div>
-          <div class="description">From <a target="_blank" href="http://coolapk.com">Coolapk</a></div>
+          <div class="description">艺术品来源 <a target="_blank" href="http://coolapk.com">Coolapk</a></div>
         </div>
       </div>
       <div class="exhibit navbar-3">
@@ -293,13 +340,13 @@
         </div>
         <div class="info">
           <div class="title">高度自定义的 Bootstrap Navbar</div>
-          <div class="description">From <a target="_blank" href="http://www.geekwire.com/">GeekWire</a></div>
+          <div class="description">艺术品来源 <a target="_blank" href="http://www.geekwire.com/">GeekWire</a></div>
         </div>
       </div>
       <nav>
         <ul class="pager">
           <li><a href="#scene/smell">前一个展厅</a></li>
-          <li><a href="#scene/variation">后一个展厅</a></li>
+          <li><a href="#scene/redefine">后一个展厅</a></li>
         </ul>
       </nav>
     </div>
@@ -358,7 +405,7 @@
       </div>
       <nav>
         <ul class="pager">
-          <li><a href="#scene/intro">前一个展厅</a></li>
+          <li><a href="#scene/rules">前一个展厅</a></li>
           <li><a href="#scene/smell">后一个展厅</a></li>
         </ul>
       </nav>
@@ -388,19 +435,19 @@
           一些积极的、追求上进的工程师也会主动选择扁平化。
         </p>
         <p>
-          <button class="button">同时他们拥有了扁平化的按钮</button>
+          <button data-toggle="modal" data-target="#touchwarningmodal" class="button">崭新的扁平化按钮</button>
         </p>
         <p>
-          <div class="input-group shiny-bootstrap-crap shine">
-            <span class="input-group-addon" id="sizing-addon2">@</span>
-            <input disabled type="text" class="form-control" placeholder="Username" value="而 input 在获得焦点后依旧闪着亮光">
+          <div data-toggle="modal" data-target="#touchwarningmodal" class="form-group shiny-bootstrap-crap shine">
+            <label class="sr-only">Hidden aria label</label>
+            <input disabled type="text" class="form-control" placeholder="Username" value="闪亮的 <input> 元素">
           </div>
         </p>
-        <div class="alert alert-danger">
-          长投影也为工程师带来了很大的帮助。
+        <div data-toggle="modal" data-target="#touchwarningmodal" class="alert alert-danger">
+          配合长投影
         </div>
         <p>
-          Bootstrap 残渣使工程师的作品更容易被辨别。
+          一起掀开了 Bootstrap 崭新的一页
         </p>
       </div>
       <div class="exhibit dark">
@@ -423,12 +470,12 @@
       </nav>
     </div>
   </section>
-  <section class="hall" data-scene="variation">
+  <section class="hall" data-scene="redefine">
     <div class="container with-space">
       <div class="thumbnail">
         <div class="caption">
           <p>
-            有更高追求的设计者偶尔也会顺从着 Bootstrap 的思路，对 Bootstrap 进行「Redesign」。
+            有更高追求的设计者偶尔也会顺从着 Bootstrap 的思路，对 Bootstrap 进行「Redefine」。
           </p>
         </div>
       </div>
@@ -441,7 +488,7 @@
         </div>
         <div class="info">
           <div class="title">开发者重新定义了 Bootstrap Alerts</div>
-          <div class="description">From <a href="http://www.factile.net/">Factile - Free Online Web, iPad and Mobile Survey Tool</a></div>
+          <div class="description">艺术品来源 <a href="http://www.factile.net/">Factile - Free Online Web, iPad and Mobile Survey Tool</a></div>
         </div>
       </div>
       <nav>
@@ -473,12 +520,12 @@
         </div>
         <div class="info">
           <div class="title">完全工具性的使用 Bootstrap，这样做合理吗？</div>
-          <div class="description">From <a href="http://pretentious-o-meter.co.uk/">Pretentious-O-Meter</a></div>
+          <div class="description">艺术品来源 <a target="_blank" href="http://pretentious-o-meter.co.uk/">Pretentious-O-Meter</a></div>
         </div>
       </div>
       <nav>
         <ul class="pager">
-          <li><a href="#scene/variation">前一个展厅</a></li>
+          <li><a href="#scene/redefine">前一个展厅</a></li>
           <li><a href="#scene/exit">出口</a></li>
         </ul>
       </nav>
@@ -490,55 +537,55 @@
         <h1>这里便是本馆的出口。<small>本馆备设多个出口</small></h1>
       </div>
       <div class="list-group">
-        <a href="http://www.ordant.com/" target="_blank" class="list-group-item">
+        <a href="http://www.ordant.com/" target="_parent" class="list-group-item">
           <h4 class="list-group-item-heading">出口 #1</h4>
           <p class="list-group-item-text">
             Print Estimating and Order Management Software
           </p>
         </a>
-        <a href="http://behindthesite.com/#/" target="_blank" class="list-group-item active">
+        <a href="http://behindthesite.com/#/" target="_parent" class="list-group-item active">
           <h4 class="list-group-item-heading">出口 #2</h4>
           <p class="list-group-item-text">
             BehindTheSite | A log of technology stacks
           </p>
         </a>
-        <a href="http://vegibit.com/vegithemes-twitter-bootstrap-themes/" target="_blank" class="list-group-item">
+        <a href="http://vegibit.com/vegithemes-twitter-bootstrap-themes/" target="_parent" class="list-group-item">
           <h4 class="list-group-item-heading">出口 #3</h4>
           <p class="list-group-item-text">
             VegiThemes Twitter Bootstrap Themes - Vegibit
           </p>
         </a>
-        <a href="https://wrapbootstrap.com/" target="_blank" class="list-group-item active">
+        <a href="https://wrapbootstrap.com/" target="_parent" class="list-group-item active">
           <h4 class="list-group-item-heading">出口 #4</h4>
           <p class="list-group-item-text">
             WrapBootstrap - Bootstrap Themes & Templates
           </p>
         </a>
-        <a href="http://www.neekanee.com/" target="_blank" class="list-group-item">
+        <a href="http://www.neekanee.com/" target="_parent" class="list-group-item">
           <h4 class="list-group-item-heading">出口 #5</h4>
           <p class="list-group-item-text">
             Global Job Search Engine | Neekanee
           </p>
         </a>
-        <a href="http://grantome.com/" target="_blank" class="list-group-item active">
+        <a href="http://grantome.com/" target="_parent" class="list-group-item active">
           <h4 class="list-group-item-heading">出口 #6</h4>
           <p class="list-group-item-text">
             Grantome : The entirety of funding information
           </p>
         </a>
-        <a href="http://jitendra-shah.co.uk/" target="_blank" class="list-group-item">
+        <a href="http://jitendra-shah.co.uk/" target="_parent" class="list-group-item">
           <h4 class="list-group-item-heading">出口 #7</h4>
           <p class="list-group-item-text">
             UX Design and Developer based in London & Coventry | Jitendra Shah
           </p>
         </a>
-        <a href="http://www.ssdtracker.com/" target="_blank" class="list-group-item active">
+        <a href="http://www.ssdtracker.com/" target="_parent" class="list-group-item active">
           <h4 class="list-group-item-heading">出口 #8</h4>
           <p class="list-group-item-text">
             SSDTracker | Find value for money Solid State Drives
           </p>
         </a>
-        <a href="http://www.clearwebstats.com/" target="_blank" class="list-group-item">
+        <a href="http://www.clearwebstats.com/" target="_parent" class="list-group-item">
           <h4 class="list-group-item-heading">出口 #9</h4>
           <p class="list-group-item-text">
             ClearWebStats.com - Information About Every Site.
@@ -550,7 +597,7 @@
           特别感谢
         </div>
         <div class="panel-body">
-          <a href="http://serotoninphobia.info/" target="_blank">Serotonin</a>
+          <a href="hhttps://www.google.com/search?q=internet&tbm=isch" target="_blank">Internet</a>
         </div>
         <div class="panel-body">
           <a href="http://builtwithbootstrap.com/" target="_blank">Built with bootstrap</a>
@@ -559,7 +606,7 @@
       <nav>
         <ul class="pager">
           <li><a href="#scene/productive-forces">前一个展厅</a></li>
-          <li><a href="#">入口</a></li>
+          <!-- <li><a href="#">入口</a></li> -->
         </ul>
       </nav>
     </div>
@@ -574,7 +621,7 @@
       </div>
       <p>
         <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-        如果你正在显示器上浏览，你可以：
+        如果你正在 PC 上浏览，你可以：
       </p>
       <ul>
         <li>
@@ -848,6 +895,42 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="touchwarningmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">请勿触碰</h4>
+        </div>
+        <div class="modal-body">
+          <p class="icon-set">
+            <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+            <span class="space"></span>
+            <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
+          </p>
+          <p class="icon-set">
+            <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span>
+            <span class="space"></span>
+            <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span>
+          </p>
+          <p class="icon-set">
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+            <span class="space"></span>
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
         </div>
       </div>
     </div>

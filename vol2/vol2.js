@@ -54,6 +54,7 @@
     }
     prev_scene.removeClass('camera-on');
     scene.addClass('camera-on');
+    $('[scene-indicator]').attr('scene-indicator', scene_name);
     elem_body.trigger('scene:jump', [scene_name, prev_scene.data('scene')]);
   }
   var setScenes = function (_scenes) {
@@ -139,6 +140,11 @@
       // $(window).trigger('resize');
     }, 200);
   });
+
+  $('.main-collapse-navbar').click('li', function() {
+    $('.main-collapse-navbar').collapse('hide');
+  });
+
   // $(window).resize(function () {
   //   var targets = $('.exhibit-iframe.auto-resize');
   //   targets.each(function (index, original_element) {

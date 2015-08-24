@@ -219,6 +219,28 @@ footer {
   padding: 10px;
 }
 
+.main-navbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  [scene-indicator=intro] .main-navbar,
+  [scene-indicator=rules] .main-navbar,
+  [scene-indicator=container] .main-navbar,
+  [scene-indicator=smell] .main-navbar,
+  [scene-indicator=navbar] .main-navbar,
+  [scene-indicator=redefine] .main-navbar,
+  [scene-indicator=productive-forces] .main-navbar {
+    display: block;
+  }
+
+}
+
+#main-navbar-collapse {
+  max-height: 400px;
+}
+
 /* Hall */
 .hall {
   min-height: 100vh;
@@ -249,8 +271,9 @@ footer {
   min-height: 100vh;
 }*/
 .hall .container.with-space {
-  margin-top: 18px;
+  margin-top: 68px;
 }
+.hall[data-scene=rules],
 .hall[data-scene=intro],
 .hall[data-scene=cover] {
   background:
@@ -268,6 +291,26 @@ footer {
 }
 .hall[data-scene=cover] .btn.enter {
   width: 100%;
+}
+.hall[data-scene=rules] .forbidden {
+  text-align: center;
+  line-height: 130px;
+}
+.hall[data-scene=rules] .middle {
+  text-align: center;
+}
+
+.hall[data-scene=intro] .jumbotron {
+  padding: 30px 15px;
+}
+
+#touchwarningmodal .icon-set {
+  text-align: center;
+  font-size: 22px;
+  margin: 1em 0;
+}
+#touchwarningmodal .icon-set .space {
+  margin-right: 20px;
 }
 
 /* Loader */
@@ -308,6 +351,7 @@ body.old-browser>.browser-warn {
   margin-bottom: 15px;
   padding: 15px;
   color: #fff;
+  overflow: hidden;
 }
 
 .custom-style-a .header {
@@ -352,6 +396,77 @@ body.old-browser>.browser-warn {
     #e5b9b9 24px 24px,
     #e5b9b9 25px 25px,
     #e5b9b9 26px 26px;
+  box-shadow:
+    #248 1px 1px,
+    #248 2px 2px,
+    #248 3px 3px,
+    #248 4px 4px,
+    #248 5px 5px,
+    #248 6px 6px,
+    #248 7px 7px,
+    #248 8px 8px,
+    #248 9px 9px,
+    #248 10px 10px,
+    #248 11px 11px,
+    #248 12px 12px,
+    #248 13px 13px,
+    #248 14px 14px,
+    #248 15px 15px,
+    #248 16px 16px,
+    #248 17px 17px,
+    #248 18px 18px,
+    #248 19px 19px,
+    #248 20px 20px,
+    #248 21px 21px,
+    #248 22px 22px,
+    #248 23px 23px,
+    #248 24px 24px,
+    #248 25px 25px,
+    #248 26px 26px,
+    #248 27px 27px,
+    #248 28px 28px,
+    #248 29px 29px,
+    #248 30px 30px,
+    #248 31px 31px,
+    #248 32px 32px,
+    #248 33px 33px,
+    #248 34px 34px,
+    #248 35px 35px,
+    #248 36px 36px,
+    #248 37px 37px,
+    #248 38px 38px,
+    #248 39px 39px,
+    #248 40px 40px,
+    #248 41px 41px,
+    #248 42px 42px,
+    #248 43px 43px,
+    #248 44px 44px,
+    #248 45px 45px,
+    #248 46px 46px,
+    #248 47px 47px,
+    #248 48px 48px,
+    #248 49px 49px,
+    #248 50px 50px,
+    #248 51px 51px,
+    #248 52px 52px,
+    #248 53px 53px,
+    #248 54px 54px,
+    #248 55px 55px,
+    #248 56px 56px,
+    #248 57px 57px,
+    #248 58px 58px,
+    #248 59px 59px,
+    #248 60px 60px,
+    #248 61px 61px,
+    #248 62px 62px,
+    #248 63px 63px,
+    #248 64px 64px,
+    #248 65px 65px,
+    #248 66px 66px,
+    #248 67px 67px,
+    #248 68px 68px,
+    #248 69px 69px,
+    #248 70px 70px;
   overflow: hidden;
 }
 
